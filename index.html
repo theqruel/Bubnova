@@ -267,30 +267,30 @@
 
 			</div>
 		</section>
-		<form class="form _container" id="form">
+		<form method="post" action="./goo1" class="form _container" id="form">
 			<h3>Запланируем встречу?</h3>
 			<div class="form__block">
 				<div class="form__item">
 					<p>Имя</p>
-					<input class="form__input" type="text">
+					<input name="name" class="form__input" type="text">
 				</div>
 				<div class="form__group">
 					<div class="form__item">
 						<p>E-mail</p>
-						<input class="form__input" type="text">
+						<input name="email" class="form__input" type="text">
 					</div>
 					<div class="form__item">
 						<p>Номер телефона</p>
-						<input class="form__input" type="text">
+						<input name="phone" class="form__input" type="text">
 					</div>
 				</div>
 				<div class="form__item">
 					<p>Сообщение</p>
-					<textarea class="form__input _inputMessage"></textarea>
+					<textarea name="message" class="form__input _inputMessage"></textarea>
 				</div>
 			</div>
 			<div class="form__button_block">
-				<button class="form__button">Отправить заявку</button>
+				<button type="submit" class="form__button">Отправить заявку</button>
 			</div>
 		</form>
 		<footer class="footer__background">
