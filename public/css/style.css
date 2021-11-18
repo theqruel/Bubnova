@@ -32,16 +32,27 @@ h1, h2, h3, h4, h5, h6 {
 
 span {
   white-space: nowrap;
-
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   min-width: 100%;
   overflow: hidden;
 }
 
 html {
   scroll-padding-top: 122px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content {
+  margin-top: 122px;
+  flex: 1 0 auto;
 }
 
 
@@ -247,6 +258,9 @@ h4 {
   color: #B3BFCD;
 }
 
+.menu__phone:hover{
+  color: #cedbe9
+}
 
 /*-------main------------------------------------*/
 
@@ -799,3 +813,16 @@ h4 {
   }
 }
 
+/*-------form confirmation------------------------------------*/
+
+.thanks {
+  text-align: center;
+  margin-top: 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thanks p {
+  margin-top: 20px;
+}
