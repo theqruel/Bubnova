@@ -272,22 +272,22 @@
 				<h3>Запланируем встречу?</h3>
 				<div class="form__block">
 					<div class="form__item">
-						<p>Имя</p>
-						<input name="name" class="form__input" type="text">
+						<p>Имя <span> (обязятельно)</span></p>
+						<input name="name" required="required" class="form__input" type="text" title="Как к вам обращаться?">
 					</div>
 					<div class="form__group">
 						<div class="form__item">
-							<p>E-mail</p>
-							<input name="email" class="form__input" type="text">
+							<p>Номер телефона  <span> (обязятельно)</span></p>
+							<input name="phone" required="required" class="form__input" type="text" id="phone" title="Введите ваш номер телефона">
 						</div>
 						<div class="form__item">
-							<p>Номер телефона</p>
-							<input name="phone" class="form__input" type="text">
+							<p>E-mail</p>
+							<input name="email" class="form__input" type="text" title="Введите ваш E-mail адрес (не обязательно)">
 						</div>
 					</div>
 					<div class="form__item">
 						<p>Сообщение</p>
-						<textarea name="message" class="form__input _inputMessage"></textarea>
+						<textarea name="message" class="form__input _inputMessage" title="Оставьте комментарий к вашему заказу (не обязятельно)"></textarea>
 					</div>
 				</div>
 				<div class="form__button_block">
@@ -323,4 +323,5 @@
 		</div>
 	</div>
 </body>
+<script src="https://unpkg.com/imask"></script>
 </html>

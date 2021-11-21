@@ -34,4 +34,10 @@ for (let anchor of anchors) {
 const activeLink = document.querySelectorAll('a[href*="#"]');
 console.log(activeLink)
 
-/*-------Main button------------------------------------*/
+/*-------Form phone number------------------------------------*/
+
+const element = document.getElementById('phone');
+const maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+const mask = IMask(element, maskOptions);

@@ -676,6 +676,11 @@ h4 {
 .form__item {
 }
 
+.form__item span {
+  opacity: 50%;
+  font-size: 70%;
+}
+
 .form__group {
   display: flex;
   justify-content: space-between;
@@ -701,6 +706,9 @@ h4 {
   color: #536983;
   border: 2px solid #cfd6df;
 }
+
+
+
 ._inputMessage {
   min-height: 150px;
   box-sizing: border-box;
@@ -831,8 +839,12 @@ h4 {
   align-items: center;
 }
 
-.thanks h1 {
+.thanks h3 {
   margin-top: 120px;
+}
+
+.thanks span{
+  white-space: nowrap;
 }
 
 .thanks p {
