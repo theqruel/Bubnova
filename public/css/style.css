@@ -707,13 +707,12 @@ h4 {
   border: 2px solid #cfd6df;
 }
 
-
-
 ._inputMessage {
   min-height: 150px;
   box-sizing: border-box;
   resize: none;
 }
+
 
 .form__button_block {
   min-width: 100%;
@@ -752,6 +751,12 @@ h4 {
 
 .form__button:hover {
   background: #5369832d;
+}
+
+.form__disclaimer {
+  opacity: 50%;
+  margin-top: 30px;
+  text-align: center;
 }
 
 
@@ -868,7 +873,7 @@ h4 {
 }
 
 .thanks h3 {
-  margin-top: 120px;
+  margin-top: 10%;
 }
 
 .thanks span{
