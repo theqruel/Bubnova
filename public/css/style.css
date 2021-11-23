@@ -223,7 +223,7 @@ h4 {
   color: #BB9A57;
 }
 .text__bubniva {
-  color: #AEAFB0;
+  color: #B3BFCD;
 }
 .menu__nav {
   display: flex;
@@ -823,11 +823,39 @@ h4 {
   white-space: normal;
 }
 
+.footer__number:hover {
+  color: #B3BFCD;
+}
+
 @media (max-width: 459px) {
   .footer__number {
     font-size: 30px;
   }
 }
+
+/*-------Created By------------------------------------*/
+
+.createdBy p {
+  text-align: right;
+  color: #4A596B;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 989px){
+  .createdBy p {
+    text-align: center;
+  }
+}
+
+.createdBy a {
+  color: #4A596B;
+}
+
+.createdBy a:hover {
+  color: #798594;
+}
+
 
 /*-------form confirmation------------------------------------*/
 
