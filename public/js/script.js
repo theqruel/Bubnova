@@ -32,12 +32,25 @@ for (let anchor of anchors) {
 };
 
 const activeLink = document.querySelectorAll('a[href*="#"]');
-console.log(activeLink)
 
-/*-------Form phone number------------------------------------*/
+/*-------Mask phone number------------------------------------*/
 
 const element = document.getElementById('phone');
 const maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
 const mask = IMask(element, maskOptions);
+
+/*-------Hiding header------------------------------------*/
+
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".header").style.top = "0";
+  } else {
+    document.querySelector(".header").style.top = "-122px";
+  }
+  prevScrollpos = currentScrollPos;
+}
